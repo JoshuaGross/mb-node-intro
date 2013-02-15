@@ -8,19 +8,19 @@ var app = module.exports =  express();
 app.get('/hello', function(req, response){
 	var msg = 'world';
 	//from helper.js
-	help.slowSend( response, msg,200);
+	help.slowSend( response, msg,200,1000);
 });
 
 //route for /world
 app.get('/world', function(req, response){
 	var msg = 'hello';
-	help.slowSend(response,msg,200);
+	help.slowSend(response,msg,200,1000);
 });
 
 //if no other route is found, send 404 not found 
 app.get('*', function(req, response){
 	var msg = '404 File not found';
-	help.slowSend(response,msg,404);
+	help.slowSend(response,msg,404,1000);
 });
 //listen defaults to localhost, I chose port 8080
 app.listen(8080);

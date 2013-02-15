@@ -1,5 +1,11 @@
 Node.js intro project(s)
 ========================
+Notes:
+------
+
+To run: node assignment1.js
+assignment1.js depends on helper.js, which is a file that contains a simple function that sends a response after a specified number of ms.
+test/ contains a single file test.js. This tests the return codes and message body of the server created in assignment1.js.
 
 Step 1: Git
 -----------

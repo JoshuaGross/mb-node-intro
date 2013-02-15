@@ -1,12 +1,13 @@
 {
-  "name":"Node.JS Intro",
+  //note to self: cannot use node or js in name
+  "name":"mb-nd-intro",
   "version":"1.0.0",
   "engines":{
     "node":"0.8.19"
   },
   "devDependencies": {
     "expect.js":"*"
-  }
+  },
   "dependencies": {
     "express":"*"
   }

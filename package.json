@@ -1,5 +1,4 @@
 {
-  //note to self: cannot use node or js in name
   "name":"mb-nd-intro",
   "version":"1.0.0",
   "engines":{

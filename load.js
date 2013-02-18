@@ -23,11 +23,20 @@ db.on('error', console.error.bind(console, 'connection error:'));
 async.times(10000, function(n, callback){
 	var item = new User;
 	item.name = 'user'+n;
-	item.email = item.name+'@fakemail.com';
-	item.save();
-	callback();
+	if(n%2==0){
+		item.email = item.name+'@fakemail.com';
+	}
+	else{
+		item.email = 'sub.'+item.name+'@fakemail.com';
+	}
+	item.save(function(){
+		//free up memory
+		delete item;
+		callback();
+	});
 }, function(err){
+	//after async.times has run everything,
+	//close the database
 	if(err) console.log(err)
 	db.close();
-
 });

@@ -8,6 +8,8 @@
     "expect.js":"*"
   },
   "dependencies": {
-    "express":"*"
+    "express":"*",
+    "async":"*",
+    "mongoose":"*"
   }
 }

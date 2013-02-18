@@ -5,7 +5,16 @@ Notes:
 
 To run: node assignment1.js
 assignment1.js depends on helper.js, which is a file that contains a simple function that sends a response after a specified number of ms.
+
 test/ contains a single file test.js. This tests the return codes and message body of the server created in assignment1.js.
+
+To run part 5:
+Start up mongod, which has a test database.
+Run load.js to insert the 10,000 records.
+To run the part 2, with mongod running, run streamFromDb.js, it will send the response as a list to localhost:8080.
+To test, run streamFromDb.js, and then run Mocha -R spec testPart5.js. 
+The email validator helper tests for common emails. 
+
 
 Step 1: Git
 -----------

@@ -1,3 +1,4 @@
+//to run: start mongod, run ../streamFromDb.js
 var http = require('http');
 var help = require('../helper.js');
 var server = require('../streamFromDb.js');

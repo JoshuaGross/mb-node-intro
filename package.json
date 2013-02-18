@@ -1,13 +1,15 @@
 {
-  "name":"Node.JS Intro",
+  "name":"mb-nd-intro",
   "version":"1.0.0",
   "engines":{
     "node":"0.8.19"
   },
   "devDependencies": {
     "expect.js":"*"
-  }
+  },
   "dependencies": {
-    "express":"*"
+    "express":"*",
+    "async":"*",
+    "mongoose":"*"
   }
 }
